@@ -1,0 +1,15 @@
+{
+  "name": "dz-cypress-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "cypress run cypress/e2e.cy.js --record --key 6e4aae16-bf19-46e3-bde3-2ecb6295d54f"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.11.0"
+  }
+}
