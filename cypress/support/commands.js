@@ -30,3 +30,20 @@ Cypress.Commands.add("login", (login, password) => {
   cy.get(selector.password).type(password);
   cy.get(selector.buttonLogin).click();
 });
+
+Cypress.Commands.add("createUser", () => {
+  cy.request({
+    method: "POST",
+    url: "https://petstore.swagger.io/v2/user",
+    body: {
+      id: 13,
+      username: "Nady13",
+      firstName: "Nady",
+      lastName: "13",
+      email: "nady13@gmail.com",
+      password: "131313",
+      phone: "+7 987 123 45 67",
+      userStatus: 0,
+    },
+  });
+});
