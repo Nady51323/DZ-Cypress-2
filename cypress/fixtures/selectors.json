@@ -6,10 +6,10 @@
   "password": "[name='password']",
   "buttonLogin": ".login__button",
   "availableHall": "#start-sales",
-  "nameHall": "SuperHall",
+  "nameHall": "data.newHall",
   "selectSessionDate": "a.page-nav__day:nth-of-type(6)",
-  "timeSession": "12:00",
-  "sessionTimeMessage": "Начало сеанса: 12:00",
+  "timeSession": "10:00",
+  "sessionTimeMessage": "Начало сеанса: 10:00",
   "chooseSeat": ".buying-scheme__wrapper > :nth-child(4) > :nth-child(1)",
   "pushButton": ".acceptin-button"
 }

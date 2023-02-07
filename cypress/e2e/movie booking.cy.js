@@ -8,6 +8,7 @@ it("Book a movie in an available hall", () => {
   cy.get(selectors.availableHall).contains(selectors.nameHall);
   cy.visit("/");
   cy.get(selectors.selectSessionDate).click();
+  cy.contains("data.newHall").should("be.visible");
   cy.get(selectors.selectMovie).contains(selectors.timeSession).click();
   cy.contains(selectors.sessionTimeMessage).should("be.visible");
   cy.get(selectors.chooseSeat).click();
